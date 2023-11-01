@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&family=Orbitron&family=Press+Start+2P&family=Rubik+Moonrocks&display=swap');
+.carousel-item img {
+    /* width: 260px; */
+    height: 600px;
+    object-fit: cover;
+    /* margin: auto;*/
+} 
+/* .carousel-item text{
+    color: white;
+} */
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-Light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar-Light .navbar-brand:focus,
+.navbar-Light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-Light .navbar-nav .nav-link{
+    color: #000;
+}
+
+/* .carousel-control-prev, .carousel-control-next {
+width: -160px;
+} */
+
+/* .carousel-control-prev-icon:after {
+color: blue; 
+}
+.carousel-control-next-icon:after {
+color: red; 
+} */
+
+
+.carousel-inner {
+    position: relative;
+  }
+  
+  .carousel-inner::before,
+  .carousel-inner::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Adjust this to change the width of the shade */
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 1;
+  }
+  
+  .carousel-inner::before {
+    left: 0;
+  }
+  
+  .carousel-inner::after {
+    right: 0;
+  }
+  
+
+.carousel-inner::after {
+right: 0;
+transform: scaleX(-1);
+}
+.carousel-item {
+position: relative;
+}
+.navbar {
+    background-color: rgba(38, 118, 89, 0.696) !important; /* Change this to your desired color */
+}
+.navbar-brand:hover{
+    color: #98cb21 !important; 
+background-color: #0f935a; 
+color: #fff; 
+border: 2px solid #0f935a; 
+border-radius: 5px; 
+padding: 5px 10px; 
+}
+.nav-item .nav-link.active {
+color: #98cb21 !important; 
+background-color: #0f935a; 
+color: #fff; 
+border: 2px solid #0f935a; 
+border-radius: 5px; 
+padding: 5px 10px; 
+}
+
+.navbar-form {
+    display: flex;
+}
+.navbar-form input {
+    flex: 1;
+}
+#userName {
+    font-weight: bold; /* Change font weight */
+    color: #013119; /* Change text color to red */
+    /* Add more styles as needed */
+    padding-right: 70px;
+}
+/* #list-example{
+        position: fixed;
+
+}
+.list-group-item {
+    /* position: fixed; */
+    /* display: block;
+    padding: 15px; */
+    /* margin-bottom: -1px; */
+    /* border: 1px solid #ddd; */
+    /* line-: 50px; */
+/* } */ 
+
+.sticky-top{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+#hh{
+    color:white;
+}
+/* .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+  } */
+
+  /* .card {
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  } */
+
+
+  .card-group {
+    display: flex;
+  }
+  
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s, z-index 0.3s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Increase shadow size and opacity on hover */
+    z-index: 2;
+  }
+
+  ul{
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  ul li{
+    list-style:none;
+    margin:0 20px;
+    transition:0.5s;
+  }
+  
+  ul li a{
+    display: block;
+    position:relative;
+    text-decoration:none;
+    padding:5px;
+    font-size:18px;
+    font-family: sans-serif;
+    color:#fff;
+    text-transform:uppercase;
+    transition:0.5s;
+    border-radius: 5px; 
+    padding: 5px 10px; 
+  }
+  
+  ul:hover li a{
+    transform:scale(1.5);
+    opacity:0.2;
+    filter:blur(5px);
+    border-radius: 5px; 
+    padding: 5px 10px; 
+  }
+  
+  ul li a:hover{
+    transform:scale(2);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color:#fff;
+    border-radius: 5px; 
+    padding: 5px 10px; 
+  }
+  
+  ul li a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#0f935a;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+    border-radius: 5px; 
+    padding: 5px 10px; 
+  }
+  
+  ul li a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+
+
+@media (max-width: 993px) {
+    ul li a,
+    ul:hover li a,
+    ul li a:before {
+        transform: none;
+        /* opacity: 1;
+        filter: blur(0); */
+    }
+    .nav-item .nav-link.active {
+        color: #98cb21 !important; 
+        background-color: #0f935a; 
+        color: #fff; 
+        border: 2px solid #0f935a; 
+        border-radius: 5px; 
+        padding: 5px 10px; 
+        }
+}
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(29, 174, 121, 0.697); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #0c583a; /* Add a dark-grey background on hover */
+  }
+  #tr {
+    color: #fff; /* Text color */
+    padding: 10px;
+    text-align: center;
+    animation: changeColor 5s infinite; /* Background color change animation */
+  }
+  @keyframes changeColor {
+    0% {
+      background-color: #3498db; /* Initial background color */
+    }
+    25% {
+      background-color: #e74c3c; /* Color after 25% of the animation duration */
+    }
+    50% {
+      background-color: #27ae60; /* Color after 50% of the animation duration */
+    }
+    75% {
+      background-color: #f1c40f; /* Color after 75% of the animation duration */
+    }
+    100% {
+      background-color: #3498db; /* Return to the initial color */
+    }
+  }
+
+  .oun{
+    margin-top: 100px;
+  }
